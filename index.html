@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Sass project</title>
+  </head>
+  <body>
+    <section class="center nav-holder">
+      <nav>
+        <img
+          src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"
+          alt="logo"
+          id="logo"
+        />
+        <ul>
+          <li><a href="#">Install</a></li>
+          <li><a href="#">Learn Sass</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Get Involved</a></li>
+        </ul>
+      </nav>
+      <section class="hero-section">
+        <h1>Install Sass</h1>
+      </section>
+    </section>
+    <main class="center">
+      <div class="sides-wrapper">
+        <div class="left-side">
+          <article>
+            <h2>Applications</h2>
+            <img
+              src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg"
+              alt="mouse image"
+            />
+            <p>
+              There are a good many applications that will get you up and
+              running with Sass in a few minutes for Mac, Windows, and Linux.
+              You can download most of the applications for free but a few of
+              them are paid apps (and totally worth it).
+            </p>
+            <ul>
+              <li><a href="#">CodeKit</a>( Paid ) Mac</li>
+              <li><a href="#">Prepros</a>( Paid ) Mac Windows Linux</li>
+            </ul>
+          </article>
+          <article>
+            <h2>Libraries</h2>
+            <p>
+              The Sass team maintains two Node.js packages for Sass, both of
+              which support
+              <a href="#">the standard JavaScript <code>API</code></a
+              >. The <a href="#"> <code>sass</code> package</a> is pure
+              JavaScript, which is a little slower but can be installed on all
+              platforms Node.js supports. The sass-embedded package wraps a JS
+              API around the Dart VM, so it's faster but only supports Windows,
+              Mac OS, and Linux.
+            </p>
+            <ul>
+              There are also community-maintained wrappers for the following
+              languages:
+              <li>
+                <a href="#">Java, </a>including <a href="#">Gradle</a> and
+                <a href="#">Maven</a> plugins.
+              </li>
+              <li><a href="#">Ruby</a></li>
+              <li><a href="#">Swift</a></li>
+            </ul>
+          </article>
+        </div>
+        <div class="right-side">
+          <article>
+            <h2>Command Line</h2>
+            <img
+              src="https://sass-lang.com/assets/img/illustrations/keyboard-4d5a3e1a.svg"
+              alt="mouse image"
+            />
+            <p>
+              When you install Sass on the command line, you'll be able to run
+              the sass executable to compile <code>.sass</code> and
+              <code>.scss</code> files to <code>.css</code>
+              files. For example:
+            </p>
+            <code class="code-base"
+              >sass source/stylesheets/index.scss
+              build/stylesheets/index.css</code
+            >
+            <p>
+              First install Sass using one of the options below, then run
+              <code>sass --version</code> to be sure it installed correctly. If
+              it did, this will include <code>1.58.3.</code> You can also run
+              <code>sass --help</code> for more information about the
+              command-line interface.
+            </p>
+            <p>
+              Once it's all set up, <strong>go and play</strong>. If you're
+              brand new to Sass we've set up some resources to help you learn
+              pretty darn quick.
+            </p>
+            <button>Learn more about sass</button>
+
+            <section>
+              <h3>Install Anywhere (Standalone)</h3>
+              <p>
+                You can install Sass on Windows, Mac, or Linux by downloading
+                the package for your operating system
+                <a href="#">from GitHub</a> and
+                <a href="#">adding it to your PATH</a>. That’s all—there are no
+                external dependencies and nothing else you need to install.
+              </p>
+            </section>
+
+            <section>
+              <h3>Install Anywhere (npm)</h3>
+              <p>
+                If you use Node.js, you can also install Sass using npm by
+                running
+              </p>
+              <code class="code-base">npm install -g sass</code>
+              <p>
+                However, please note that this will install the pure JavaScript
+                implementation of Sass, which runs somewhat slower than the
+                other options listed here. But it has the same interface, so
+                it’ll be easy to swap in another implementation later if you
+                need a bit more speed!
+              </p>
+            </section>
+
+            <section>
+              <h3>Install on Windows (Chocolatey)</h3>
+              <p>
+                If you use the Chocolatey package manager for Windows, you can
+                install Dart Sass by running
+              </p>
+              <code class="code-base">choco install sass</code>
+            </section>
+
+            <section>
+              <h3>Install on Mac OS X or Linux (Homebrew)</h3>
+              <p>
+                If you use the Homebrew package manager for Mac OS X or Linux,
+                you can install Dart Sass by running
+              </p>
+              <code class="code-base">brew install sass/sass/sass</code>
+            </section>
+          </article>
+        </div>
+      </div>
+    </main>
+    <section class="center current-releases-wrapper">
+      <div class="current-releases">
+        <ul>
+          Current Releases:
+          <li><a href="#">Dart Sass 1.58.3</a></li>
+          <li><a href="#">LibSass 3.6.5</a></li>
+          <li><a href="#">Ruby Sass</a></li>
+          <li><a href="#">Implimentation Guide</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer class="center">
+      <div class="footer-wrapper">
+        <div class="left-side">
+          <p>
+            Sass © 2006–2023 the Sass team, and numerous contributors. It is
+            available for use and modification under
+            <a href="#">the MIT License</a>.
+          </p>
+          <ul>
+            <li><a href="#">Sass on GitHub</a></li>
+            <li><a href="#">Website Source Code</a></li>
+            <li><a href="#">Style Guide</a></li>
+            <li><a href="#">Community Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <p>
+            <a href="#"><i class="fa-brands fa-twitter"></i> Follow ©SassCSS</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
