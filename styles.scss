@@ -192,14 +192,16 @@ a {
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(30, 30, 30);
     color: $link-color-light;
     
     .footer-wrapper {
-        padding: 4rem 1rem;
+        padding: 4rem 2rem;
         display: flex;
         gap: 2rem;
         justify-content: space-between;
+        color: rgb(182, 182, 182);
+
         
         .left-side ul { 
             margin-top: 1rem;
@@ -213,7 +215,7 @@ footer {
         .right-side {
             p {
                 padding: 0.5rem 1rem !important;
-                background-color: #00acee  !important;
+                background-color: #00acee !important;
                 border-radius: 30px;
 
                 a {
@@ -255,5 +257,32 @@ $desktop-width: 1024px;
 
   .sides-wrapper {
     grid-template-columns: 1fr !important;
+  }
+
+  .current-releases-wrapper{
+    
+    .current-releases {
+        ul {
+            flex-wrap: wrap;
+            row-gap: 1.5rem;
+        }
+    }
+  }
+
+  footer {
+    .footer-wrapper {
+        flex-direction: column;
+        // padding: 1rem;
+        ul {
+            margin-top: 2rem !important;
+            flex-direction: column;
+        }
+
+        .right-side {
+            p {
+                width: fit-content;
+            }
+        }
+    }
   }
 }

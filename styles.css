@@ -153,14 +153,15 @@ a {
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(30, 30, 30);
   color: rgb(234, 234, 234);
 }
 footer .footer-wrapper {
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
   display: flex;
   gap: 2rem;
   justify-content: space-between;
+  color: rgb(182, 182, 182);
 }
 footer .footer-wrapper .left-side ul {
   margin-top: 1rem;
@@ -198,6 +199,20 @@ footer .footer-wrapper .right-side p a {
   }
   .sides-wrapper {
     grid-template-columns: 1fr !important;
+  }
+  .current-releases-wrapper .current-releases ul {
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+  }
+  footer .footer-wrapper {
+    flex-direction: column;
+  }
+  footer .footer-wrapper ul {
+    margin-top: 2rem !important;
+    flex-direction: column;
+  }
+  footer .footer-wrapper .right-side p {
+    width: fit-content;
   }
 }
 
