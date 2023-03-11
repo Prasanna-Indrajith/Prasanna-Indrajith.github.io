@@ -11,7 +11,7 @@ main article ul, main article section, main article, main .sides-wrapper .left-s
 }
 
 body {
-  font-family: "inter";
+  font-family: "inter", sans-serif;
 }
 
 .nav-holder nav ul, .nav-holder nav, .center {
@@ -111,6 +111,7 @@ main article p {
 main article img {
   align-self: center;
   width: 50%;
+  aspect-ratio: 1/1;
 }
 main article a {
   color: rgb(194, 109, 109);
@@ -127,6 +128,11 @@ main article ul li {
 }
 main article ul li:nth-child(1) {
   margin-top: 0.5rem;
+}
+main article ul .li-description {
+  color: rgb(72, 72, 72);
+  margin-bottom: 1rem;
+  transform: translateX(-1rem);
 }
 
 a {

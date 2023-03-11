@@ -15,7 +15,7 @@ $link-color-light: rgb(234, 234, 234);
 }
 
 body {
-    font-family: "inter";
+    font-family: "inter",sans-serif;
 }
 
 %flex {
@@ -137,6 +137,7 @@ main {
         img {
             align-self: center;
             width: 50%;
+            aspect-ratio: 1/1;
         }
 
         a  {
@@ -159,6 +160,11 @@ main {
 
             li:nth-child(1) {
                 margin-top: 0.5rem;
+            }
+            .li-description {
+                color: rgb(72, 72, 72);
+                margin-bottom: 1rem;
+                transform: translateX(-1rem);
             }
         }
     }
